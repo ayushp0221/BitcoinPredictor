@@ -26,3 +26,13 @@ The primary goal is to predict short-term and long-term Bitcoin price movements 
 - Further fine-tuning of hyperparameters.
 - Experimenting with different feature engineering techniques.
 - Exploring other time-series forecasting models such as Transformer-based architectures.
+
+## Usage: 
+To replicate the findings and run the notebooks:
+
+Clone the repository.
+Ensure you have Jupyter Notebook installed.
+Install all required dependencies.
+Run the Jupyter notebooks within the repository.
+
+**Project Demo:** https://www.youtube.com/watch?v=4ujosI7b908&ab_channel=AyuShPrajapati
