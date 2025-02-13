@@ -1,44 +1,28 @@
-# BitcoinPredictor
+# Bitcoin Price Prediction
 
-## Introduction:
-This project aims to predict Bitcoin prices using historical data. We explore various machine learning models, focusing on deep learning techniques like LSTM, GRU, and Bidirectional LSTM, to forecast future price movements.
+## Overview
+This project aims to develop and validate a robust machine learning model for forecasting Bitcoin price trends. By leveraging historical price data, market sentiment, and financial indicators, the model provides actionable insights for investors, analysts, and cryptocurrency enthusiasts.
 
-## Dependencies:
-To run the Jupyter notebooks in this repository, you will need the following libraries:  
-* NumPy
-* Pandas
-* Matplotlib
-* Keras
-* Scikit-learn
+## Objective
+The primary goal is to predict short-term and long-term Bitcoin price movements using advanced Deep learning models.
 
-## Dataset:  
-The dataset consists of minute-level price data of Bitcoin spanning from 2017 to 2021 (https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?select=BTC-2018min.csv). The data includes features such as open, high, low, close prices, and trading volume in BTC and USD.
+## Dataset
+- **Size**: 26 million records of Bitcoin price data
+- **Source**: [Kaggle - BTC in USD](https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?select=BTC-2018min.csv)
+- **Features Used**: Index, Values
+- **Split**: 80% training data, 20% test data
 
-## Preprocessing:
-The preprocessing steps include:
-* Removing unnecessary columns like Unix timestamps.
-* Converting date strings to datetime objects.
-* Handling missing values.
-* Scaling numerical features to prepare data for neural network models.
+## Model Selection & Training
+- **LSTM (Long Short-Term Memory)**: Captures long-term dependencies in time series data.
+- **Bidirectional LSTM (Bi-LSTM)**: Processes data in both forward and backward directions to leverage all available information.
+- **GRU (Gated Recurrent Units)**: A computationally efficient alternative to LSTM, reducing training time while maintaining accuracy.
 
-## Exploratory Data Analysis (EDA):
-The EDA process involves visualizing various aspects of Bitcoin prices and trading volumes over the years to understand trends and patterns that could influence the model's performance.
+## Results & Achievements
+- Comparative analysis of models with and without data scaling.
+- **Bidirectional LSTM** achieved the best performance in terms of accuracy and consistency.
+- Potential improvements include incorporating additional data sources and ensemble learning techniques.
 
-## Model Building:
-Several models are built and tested in this project:
-*	LSTM (Long Short-Term Memory): A type of recurrent neural network suitable for sequence prediction problems.
-*	GRU (Gated Recurrent Unit): Simplified version of LSTM with fewer parameters.
-*	Bidirectional LSTM: An extension of traditional LSTMs that can improve model performance on sequence classification problems.
-
-## Evaluation:
-The models are evaluated using metrics such as Mean Squared Error (MSE) and Mean Absolute Error (MAE). The evaluation section discusses the performance of each model, highlighting the Bidirectional LSTM for its superior accuracy.
-
-## Usage:
-To replicate the findings and run the notebooks:
-1.	Clone the repository.
-2.	Ensure you have Jupyter Notebook installed.
-3.	Install all required dependencies.
-4.	Run the Jupyter notebooks within the repository.
-
-### Project Demo 
-https://www.youtube.com/watch?v=4ujosI7b908&ab_channel=AyuShPrajapati
+## Future Work
+- Further fine-tuning of hyperparameters.
+- Experimenting with different feature engineering techniques.
+- Exploring other time-series forecasting models such as Transformer-based architectures.
